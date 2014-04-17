@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.2" client="site" method="upgrade">
+    <name>MOD_DB8LATESTWEBLINKS</name>
+    <author>Peter Martin</author>
+    <creationDate>April 2014</creationDate>
+    <copyright>Copyright (C) 2014 by Peter Martin. All rights reserved.</copyright>
+    <license>GNU General Public License version 2</license>
+    <authorEmail>joomla@db8.nl</authorEmail>
+    <authorUrl>www.db8.nl</authorUrl>
+    <version>2.3</version>
+    <description>MOD_DB8LATESTWEBLINKS_XML_DESCRIPTION</description>
+
+    <files>
+        <filename module="mod_db8latestweblinks">mod_db8latestweblinks.php</filename>
+        <filename>mod_db8latestweblinks.xml</filename>
+        <filename>helper.php</filename>
+        <folder>assets</folder>
+        <folder>language</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="count"
+                       type="text"
+                       default="5"
+                       label="MOD_DB8LATESTWEBLINKS_COUNT_LABEL"
+                       description="MOD_DB8LATESTWEBLINKS_COUNT_DESCR" />
+
+                <field name="catid" 
+                       type="category"
+                       multiple="true" 
+                       extension="com_weblinks" 
+                       label="MOD_DB8LATESTWEBLINKS_CATEGORY_LABEL"
+                       description="MOD_DB8LATESTWEBLINKS_CATEGORY_DESCR" />
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field name="layout"
+                       type="modulelayout"
+                       label="JFIELD_ALT_LAYOUT_LABEL"
+                       description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+                <field  name="moduleclass_sfx"
+                        type="textarea" rows="3"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+                <field  name="cache"
+                        type="list"
+                        default="1"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        description="COM_MODULES_FIELD_CACHING_DESC">
+                    <option
+                        value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option
+                        value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field name="cache_time"
+                       type="text"
+                       default="900"
+                       label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                       description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+
+                <field name="cachemode"
+                       type="hidden"
+                       default="itemid">
+                    <option
+                        value="itemid">
+                    </option>
+                </field>
+
+            </fieldset>
+
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="mod_db8latestweblinks">http://www.db8.nl/updates/mod_db8latestweblinks.xml</server>
+    </updateservers>
+</extension>
