@@ -10,8 +10,5 @@ Version 2.3
 - Converted the module to Joomla 3.x and added <updateserver> for automatic future update notifications & one-click-update functionality
 
 
-Greetings,
-Peter Martin
-www.db8.nl
-
-https://github.com/pe7er
+Thanks to:
+* Marc Antoine Thevenet - for Translation of fr-FR language pack.
