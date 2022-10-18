@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="4.0" client="site" method="upgrade">
+    <name>mod_db8latestweblinks</name>
+    <author>Peter Martin</author>
+    <creationDate>October 2022</creationDate>
+    <copyright>Copyright (C) 2014-2022 by Peter Martin. All rights reserved.</copyright>
+    <license>GNU General Public License version 2</license>
+    <authorEmail>joomla@db8.nl</authorEmail>
+    <authorUrl>https://db8.nl</authorUrl>
+    <version>3.0.0</version>
+    <description>MOD_DB8LATESTWEBLINKS_XML_DESCRIPTION</description>
+
+    <namespace path="src">Db8\Module\Db8latestweblinks</namespace>
+
+    <files>
+        <filename module="mod_db8latestweblinks">mod_db8latestweblinks.php</filename>
+        <filename>helper.php</filename>
+        <folder>language</folder>
+        <folder>src</folder>
+        <folder>tmpl</folder>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+                <field name="count"
+                       type="text"
+                       default="5"
+                       label="MOD_DB8LATESTWEBLINKS_COUNT_LABEL"
+                       description="MOD_DB8LATESTWEBLINKS_COUNT_DESCR"
+                />
+
+                <field name="catid"
+                       type="category"
+                       multiple="true"
+                       extension="com_weblinks"
+                       label="MOD_DB8LATESTWEBLINKS_CATEGORY_LABEL"
+                       description="MOD_DB8LATESTWEBLINKS_CATEGORY_DESCR"
+                />
+            </fieldset>
+
+            <fieldset name="advanced">
+                <field
+                        name="layout"
+                        type="modulelayout"
+                        label="JFIELD_ALT_LAYOUT_LABEL"
+                        class="form-select"
+                        validate="moduleLayout"
+                />
+
+                <field
+                        name="moduleclass_sfx"
+                        type="textarea"
+                        label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+                        rows="3"
+                        validate="CssIdentifier"
+                />
+
+                <field
+                        name="cache"
+                        type="list"
+                        label="COM_MODULES_FIELD_CACHING_LABEL"
+                        default="1"
+                        filter="integer"
+                        validate="options"
+                >
+                    <option value="1">JGLOBAL_USE_GLOBAL</option>
+                    <option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+                </field>
+
+                <field
+                        name="cache_time"
+                        type="number"
+                        label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+                        default="900"
+                        filter="integer"
+                />
+
+                <field
+                        name="cachemode"
+                        type="hidden"
+                        default="static"
+                >
+                    <option value="static"></option>
+                </field>
+            </fieldset>
+
+        </fields>
+    </config>
+
+    <updateservers>
+        <server type="extension" name="mod_db8latestweblinks">https://raw.githubusercontent.com/pe7er/db8latestweblinks/master/update.xml</server>
+    </updateservers>
+
+</extension>

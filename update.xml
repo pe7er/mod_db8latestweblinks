@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+<updates>
+    <update>
+
+        <name>mod_db8latestweblinks 2.3.1</name>
+        <description>Module to display the most recent added weblinks from the Weblinks component.</description>
+        <element>mod_db8latestweblinks</element>
+        <type>module</type>
+        <client>site</client>
+        <version>2.3.1</version>
+        <infourl title="mod_db8latestweblinks">https://github.com/pe7er/mod_db8latestweblinks</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/pe7er/mod_db8latestweblinks/raw/master/downloads/mod_db8latestweblinks-j3-v2.3.1.zip</downloadurl>
+        </downloads>
+        <sha512>2288e5eff8303a5668c849c80d1b310fd7273fc01232269af52ba90d4e4f07a27444d3ea64a4e2bf4b7bcc92b92e13560bbb237eb9d73c4c4d6f016e0a20f8b1</sha512>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Peter Martin</maintainer>
+        <maintainerurl>https://db8.nl</maintainerurl>
+        <php_minimum>7.0.0</php_minimum>
+        <targetplatform name="joomla" version="((3\.(10|9))"/>
+    </update>
+
+    <update>
+        <name>mod_db8latestweblinks 3.0.0</name>
+        <description>Module to display the most recent added weblinks from the Weblinks component.</description>
+        <element>mod_db8latestweblinks</element>
+        <type>module</type>
+        <client>site</client>
+        <version>3.0.0</version>
+        <infourl title="mod_db8latestweblinks">https://github.com/pe7er/mod_db8latestweblinks</infourl>
+        <downloads>
+            <downloadurl type="full" format="zip">https://github.com/pe7er/mod_db8latestweblinks/raw/master/downloads/mod_db8latestweblinks-j4-v3.0.0.zip</downloadurl>
+        </downloads>
+        <sha512>504892861f47b780efb32cb8a38d2ca369e0321880e2f92320325409b5e6d6abe853a3ee7b755e39ab6d4fe34bf3f49a593308033eb5bedfc173802196a855da</sha512>
+        <tags>
+            <tag>stable</tag>
+        </tags>
+        <maintainer>Peter Martin</maintainer>
+        <maintainerurl>https://db8.nl</maintainerurl>
+        <php_minimum>7.0.0</php_minimum>
+        <targetplatform name="joomla" version="4\.(0|1|2)"/>
+    </update>
+
+</updates>
