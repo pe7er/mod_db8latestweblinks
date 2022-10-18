@@ -14,7 +14,6 @@
 
     <files>
         <filename module="mod_db8latestweblinks">mod_db8latestweblinks.php</filename>
-        <filename>helper.php</filename>
         <folder>language</folder>
         <folder>src</folder>
         <folder>tmpl</folder>
