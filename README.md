@@ -5,6 +5,8 @@ db8 Latest Weblinks
 
 This module displays the latest added weblinks. The clicks on the weblinks are handled by Joomla's default weblink component and the hits are counted. In the back-end a Weblinks category or multiple categories can be selected.
 
+If you like this extension, please leave a positive review at: https://extensions.joomla.org/extension/directory-a-documentation/weblinks/db8-latest-weblinks/
+
 ## Joomla 4 version
 Version 3.0.0 - 18 October 2022
 - Rewrote the module for Joomla 4

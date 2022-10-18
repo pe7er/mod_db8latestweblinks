@@ -12,7 +12,7 @@
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/pe7er/mod_db8latestweblinks/raw/master/downloads/mod_db8latestweblinks-j3-v2.3.1.zip</downloadurl>
         </downloads>
-        <sha512>2288e5eff8303a5668c849c80d1b310fd7273fc01232269af52ba90d4e4f07a27444d3ea64a4e2bf4b7bcc92b92e13560bbb237eb9d73c4c4d6f016e0a20f8b1</sha512>
+        <sha512>dd09894e78f7c8ce463e0aa87ac0bdbac5391323974fb404d69692c851c00527c468ab25a2d64f6308a92b840ae378e898dbf2f89d06ff34dc2f5309057be61f</sha512>
         <tags>
             <tag>stable</tag>
         </tags>
@@ -33,7 +33,7 @@
         <downloads>
             <downloadurl type="full" format="zip">https://github.com/pe7er/mod_db8latestweblinks/raw/master/downloads/mod_db8latestweblinks-j4-v3.0.0.zip</downloadurl>
         </downloads>
-        <sha512>504892861f47b780efb32cb8a38d2ca369e0321880e2f92320325409b5e6d6abe853a3ee7b755e39ab6d4fe34bf3f49a593308033eb5bedfc173802196a855da</sha512>
+        <sha512>27de8d4b1b09981722549ea49332c836072f8cc554e9f3ff447c281ca688f0fad4bcc8f9c12bd1c89cb63f529453ef990ec44845bbf19c0dea7bb6ea4579dd2b</sha512>
         <tags>
             <tag>stable</tag>
         </tags>
